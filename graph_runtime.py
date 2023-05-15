@@ -11,3 +11,11 @@ plt.xlabel('Image Size')
 plt.ylabel('Runtime')
 
 plt.plot(a,b)
+
+# sequencial
+c = [200, 300, 500, 800]
+d = [0.24578857421875,0.5436396598815918,1.544672966003418,3.963372230529785]
+plt.xlabel('Image Size')
+plt.ylabel('Runtime')
+
+plt.plot(c,d)
