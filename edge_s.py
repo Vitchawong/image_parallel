@@ -20,9 +20,8 @@ imgy = np.zeros(shape=(img.shape[0], img.shape[1]))
 imgx = np.zeros(shape=(img.shape[0], img.shape[1]))
 
 # Define the Laplacian filter
-laplace = [[0, -1, 0],
-           [-1, 4, -1],
-           [0, -1, 0]]
+KERNELS = {"Edge Detection": np.array([[-1,-1,-1],[-1,8,-1],[-1,-1,-1]]), "Sharpen": np.array([[0,-1,0], [-1,5,-1], [0,-1,0]])}
+laplace = KERNELS["Edge Detection"]
 
 # Perform convolution on the image with the Laplacian filter
 start = time.time()
