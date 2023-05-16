@@ -5,7 +5,7 @@ import convolution
 import time
 
 # Read and resize the image
-img = cv2.imread("Resources/mountain_image.jpg", cv2.IMREAD_GRAYSCALE)
+img = cv2.imread("dog.jpg", cv2.IMREAD_GRAYSCALE)
 img = cv2.resize(img, (500, 500))
 
 # Add padding to the image
