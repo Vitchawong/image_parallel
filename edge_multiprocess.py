@@ -14,6 +14,7 @@ if __name__ == "__main__":
   
 
     image = cv2.imread(image_name, cv2.IMREAD_GRAYSCALE)
+    image = cv2.GaussianBlur(image, (5, 5), 0)
     image = cv2.resize(image, (500, 500))
     image = np.pad(image, [(1, 1), (1, 1)], 'constant', constant_values=0)
 
